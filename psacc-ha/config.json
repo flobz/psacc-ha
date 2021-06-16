@@ -1,0 +1,24 @@
+{
+  "name": "PSA Car Controller",
+  "version": "2.4.0",
+  "slug": "psacc",
+  "description": "Control and get information from your PSA car",
+  "arch": [
+    "amd64",
+    "armhf",
+    "aarch64"
+  ],
+  "url": "https://github.com/flobz/psa_car_controller",
+  "startup": "application",
+  "boot": "auto",
+  "ports_description": {"5000/tcp": "Web interface"},
+  "ports": {
+    "5000/tcp": null
+    },
+  "image": "flobz/psa_car_controller",
+  "legacy": true,
+  "ingress": true,
+  "ingress_port": 5000,
+  "panel_icon": "mdi:car",
+  "environment": {"PSACC_PORT": "5000", "PSACC_CONFIG_DIR": "/data"}
+}
