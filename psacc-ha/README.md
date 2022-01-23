@@ -13,7 +13,7 @@
 5. Click on add
 6. At the bottom of the page you should see PSA Car Controller
 7. Click on it  and install
-8. Configure the addons : ![image](https://user-images.githubusercontent.com/48728684/150692985-23da4fbe-cc40-4460-8003-1636b8211f60.png)
+8. Configure the addon : ![image](https://user-images.githubusercontent.com/48728684/150692985-23da4fbe-cc40-4460-8003-1636b8211f60.png)
 
 
 You can find more details here : https://www.home-assistant.io/common-tasks/os#installing-third-party-add-ons
