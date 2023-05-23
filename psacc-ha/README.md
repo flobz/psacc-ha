@@ -18,6 +18,26 @@
 
 You can find more details here : https://www.home-assistant.io/common-tasks/os#installing-third-party-add-ons
 
+## Modify config file
+1. [SSH to your raspberry or virtual machine](https://developers.home-assistant.io/docs/operating-system/debugging/#ssh-access-to-the-host)
+2. Run the following command 
+
+```shell
+docker inspect -f '{{ .Mounts }}' $(docker ps -aqf "name=acc") | grep -o '/mnt/data[^ ]*psacc' 
+```
+It should return PSACC config path.
+
+4. cd `<path returned by last command>`
+5. You can now edit any config file 
+```shell
+nano charge_config.json                        
+nano config.ini                                
+nano config.json
+```
+6. You can also backup the database that contains all trips and charge:
+```
+cp info.db /root/psacc_db_backup.db
+```
 ## Configure HA Panel
 [Look here](https://github.com/Flodu31/HomeAssistant-PeugeotIntegration)
 
