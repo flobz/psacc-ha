@@ -1,6 +1,6 @@
 {
   "name": "PSA Car Controller",
-  "version": "v3.5.2",
+  "version": "v3.5.3",
   "slug": "psacc",
   "description": "Control and get information from your PSA car",
   "arch": [
