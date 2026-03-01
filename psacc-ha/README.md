@@ -20,14 +20,7 @@ You can find more details here : https://www.home-assistant.io/common-tasks/os#i
 
 ## Modify config file
 1. [SSH to your raspberry or virtual machine](https://developers.home-assistant.io/docs/operating-system/debugging/#ssh-access-to-the-host)
-2. Run the following command 
-
-```shell
-docker inspect -f '{{ .Mounts }}' $(docker ps -aqf "name=acc") | grep -o '/mnt/data[^ ]*psacc' 
-```
-It should return PSACC config path.
-
-4. cd `<path returned by last command>`
+2. cd into `/addon_configs/b9f12d83_psacc` (if not found check for directory ending in `psacc`, or run `find /addon_configs -name "*psacc" -type d`)
 5. You can now edit any config file 
 ```shell
 nano charge_config.json                        
